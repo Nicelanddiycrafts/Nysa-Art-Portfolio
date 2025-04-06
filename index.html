@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nysa's Art Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+</head>
+
+<body>
+
+
+    <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+            <a class="navbar-brand" href="#">Nysa's Art Gallery</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#grid">Multimedia Drawings</a></li>
+                <li><a href="#slide">Acrylic/Oil Paintings</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <div class="page-header" id="grid">
+            <h2 class="text-capitalize">Multimedia Drawings</h2>
+        </div>
+
+        <center>
+            
+            <section id="grids">
+
+                <div class="row">
+                    <button style="background-image: url('e.jpg');  background-position: center;
+                    background-repeat: no-repeat; width: 500px; height: 550px; background-size: 100%;"  onclick="save()"></button>
+                    <button style="background-image: url('d.jpg');  background-position: center;
+                    background-repeat: no-repeat; width: 500px; height: 550px; background-size: 100%;" onclick="save1()"></button>
+                    <button style="background-image: url('a.jpg');  background-position: center;
+                    background-repeat: no-repeat; width: 500px; height: 550px; background-size: 100%;"  onclick="save2()"></button>
+                    <button style="background-image: url('n.jpg');  background-position: center;
+                    background-repeat: no-repeat; width: 500px; height: 550px; background-size: 100%;" onclick="save3()"></button>
+
+                </div>
+                <div class="row">
+                    <button style="background-image: url('f.jpg');  background-position: center;
+                    background-repeat: no-repeat; width: 500px; height: 550px; background-size: 100%;"></button>
+                    <button style="background-image: url('l.jpg');  background-position: center;
+                    background-repeat: no-repeat; width: 500px; height: 550px; background-size: 100%;"></button>
+                    <button style="background-image: url('b.jpg');  background-position: center;
+                    background-repeat: no-repeat; width: 500px; height: 550px; background-size: 100%;"></button>
+                    <button style="background-image: url('c.jpg');  background-position: center;
+                    background-repeat: no-repeat; width: 500px; height: 550px; background-size: 100%;"></button>
+
+                </div>
+                <div class="row">
+                    <button style="background-image: url('o.jpg');  background-position: center;
+                    background-repeat: no-repeat; width: 500px; height: 550px; background-size: 100%;"></button>
+                    <button style="background-image: url('h.jpg');  background-position: center;
+                    background-repeat: no-repeat; width: 500px; height: 550px; background-size: 100%;"></button>
+                    <button style="background-image: url('g.jpg');  background-position: center;
+                    background-repeat: no-repeat; width: 500px; height: 550px; background-size: 100%;"></button>
+                    <button style="background-image: url('i.jpg');  background-position: center;
+                    background-repeat: no-repeat; width: 500px; height: 550px; background-size: 100%;"></button>
+
+                </div>
+                <div class="row">
+                    <button style="background-image: url('p.jpg');  background-position: center;
+                    background-repeat: no-repeat; width: 500px; height: 550px; background-size: 100%;"></button>
+                    <button style="background-image: url('m.jpg');  background-position: center;
+                    background-repeat: no-repeat; width: 500px; height: 550px; background-size: 100%;"></button>
+                </div>
+
+    </div>
+    </section>
+       <br>
+    <br>
+    <hr style="width:100%">
+    <section id="slide">
+        
+        <h2>Acrylic/Oil Paintings</h2>
+        <br>
+<center>        
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                   <span> <img class="img-responsive" src="q.jpg" style="width: 45%; ">
+                                <div class="carousel-caption">
+                        
+                        <p></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-reponsive" src="r.jpg"  style="width: 45%;">
+                    <div class="carousel-caption">
+                        
+                        <p></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-reponsive" src="s.jpg" style="width: 45%;">
+                    <div class="carousel-caption">
+                        
+                        <p></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-reponsive" src="u.jpg" style="width: 45%;">
+                    <div class="carousel-caption">
+                        
+                        <p></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-reponsive" src="v.jpg"  style="width: 45%;">
+                    <div class="carousel-caption">
+                        
+                        <p></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-reponsive" src="w.jpg"  style="width: 45%;">
+                    <div class="carousel-caption">
+                        
+                        <p></p>
+                    </div>
+                </div>
+                        
+               
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+        </div>
+    </section>
+    </center>
+    <br>
+    <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="environment">
+        <h2 class="text-capitalize">Learn more about me</h2>
+    </div>
+    <center>
+        <div class="travel_mainDiv text-center mx-auto" style="max-width: 800px;">
+            <p class="text-muted">
+                I have been painting for 6 years now and enjoy drawing portraits of people. I started off with teaching myself simple techniques of drawing faces and then transitioned to painting them. I hope you enjoyed these paintings!
+            </p>
+            <h5 class="text-dark text-capitalize"> Contact Me At: <a href="mailto:funnydreamland@gmail.com?subject=Greetings">
+						<img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_2x_r2.png" style="width: 70px;margin: 7px">
+					   <a href="https://www.instagram.com/niceland.0/"><img src="instagram.png" style="width: 30px;margin: 5px"></a> </a>
+                        <a href="https://www.linkedin.com/in/nysa-bhasin-8b1380296"><img src="link.png" style="width: 30px;margin: 5px"></a>
+            </h5>
+				</div>
+            </div>        
+    </center>
+    <br>
+
+    <script src="main.js"></script>
+</body>
